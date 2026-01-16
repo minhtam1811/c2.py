@@ -1,1 +1,7 @@
-
+import pandas as pd
+a = {
+    'Tên': ['Minh Tâm', ' Minh Thảo', ' Minh Châu'],
+    'Tuổi': ['20','29','1']
+}
+myfam = pd.DataFrame(a)
+print(myfam)
