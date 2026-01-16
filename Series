@@ -1,1 +1,28 @@
+import pandas as pd
+a = [18,11,5]
+myborn = pd.Series(a)
+print(myborn)
+
+#Return the value of the Series:
+print(myborn[1])
+print()
+b = [7,12,5]
+mynew = pd.Series(b,index=['x','y','z'])
+print(mynew)
+print(mynew['y'])
+print()
+
+#Create a simple Pandas Series from a dictionary:
+subject ={ 'Tuesday': 2,'Wenesday': 4, 'Thursday': 4 }
+mysub= pd.Series(subject)
+print(mysub)
+print()
+#Create a DataFrame from two Series:
+data = {
+    'tên': ['minh tam', 'minhthao', 'minhchau'],
+    'tuổi': [20,28,1]
+}
+myfam= pd.Series(data)
+print(myfam)
+
 
