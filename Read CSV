@@ -1,0 +1,8 @@
+#load csv
+import pandas as pd
+df = pd.read_csv('gradedata.csv')
+print(df.to_string())
+print()
+print(df)
+#Check the number of maximum returned rows:
+print(pd.options.display.max_rows) 
