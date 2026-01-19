@@ -1,0 +1,36 @@
+import pandas as pd
+df = pd.read_json('gradedata.csv')
+print(df.to_string()) 
+#Load a Python Dictionary into a DataFrame
+import pandas as pd
+data = {
+    'exercise':{
+        '1':2,
+        '2':4,
+        '3':5,
+        '4':1,
+        '5':5,
+        '6':2,
+        '7':3
+    },
+    'hours':{
+        '1':7,
+        '2':12,
+        '3':18,
+        '4':10,
+        '5':20,
+        '6':11,
+        '7':14
+    },
+    'grade':{
+        '1':83.2,
+        '2':80.7,
+        '3':90.3,
+        '4':83.8,
+        '5':99,
+        '6':71.9,
+        '7':98.1
+    }
+}
+df = pd.DataFrame(data)
+print(df)
